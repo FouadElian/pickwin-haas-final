@@ -70,12 +70,15 @@ const Features: React.FC = () => {
               </li>
             ))}
           </ul>
-          <a href="https://pwpartners.cxclick.com/visit/?bta=35339&brand=pickwin" target="_blank" rel="noopener noreferrer" className="bg-white text-black font-black px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-pickwin-green transition-all shadow-xl uppercase italic text-sm sm:text-base w-full sm:w-auto relative overflow-hidden group inline-block text-center">
-            <span className="relative z-10">VIEW SPORTSBOOK</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/10 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            {/* Card suit accent on button */}
-            <span className="absolute -right-2 top-1/2 -translate-y-1/2 text-black/20 text-lg hidden sm:inline-block">♠</span>
-          </a>
+          <div className="flex flex-col items-start">
+            <a href="https://pwpartners.cxclick.com/visit/?bta=35339&brand=pickwin" target="_blank" rel="noopener noreferrer" className="bg-white text-black font-black px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-pickwin-green transition-all shadow-xl uppercase italic text-sm sm:text-base w-full sm:w-auto relative overflow-hidden group inline-block text-center">
+              <span className="relative z-10">VIEW SPORTSBOOK</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/10 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              {/* Card suit accent on button */}
+              <span className="absolute -right-2 top-1/2 -translate-y-1/2 text-black/20 text-lg hidden sm:inline-block">♠</span>
+            </a>
+            <p className="text-gray-400 text-xs mt-2 italic">refer code : M0st</p>
+          </div>
           </div>
         </div>
         <div className="relative group">
@@ -264,12 +267,15 @@ const Features: React.FC = () => {
               </div>
             ))}
           </div>
-          <a href="https://pwpartners.cxclick.com/visit/?bta=35339&brand=pickwin" target="_blank" rel="noopener noreferrer" className="bg-pickwin-green text-black font-black px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-white transition-all shadow-xl uppercase italic text-sm sm:text-base w-full sm:w-auto relative overflow-hidden group inline-block text-center">
-            <span className="relative z-10">{t('features.exploreCasino')}</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/10 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            {/* Card suit accent on button */}
-            <span className="absolute -right-2 top-1/2 -translate-y-1/2 text-black/20 text-lg hidden sm:inline-block">♠</span>
-          </a>
+          <div className="flex flex-col items-start">
+            <a href="https://pwpartners.cxclick.com/visit/?bta=35339&brand=pickwin" target="_blank" rel="noopener noreferrer" className="bg-pickwin-green text-black font-black px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-white transition-all shadow-xl uppercase italic text-sm sm:text-base w-full sm:w-auto relative overflow-hidden group inline-block text-center">
+              <span className="relative z-10">{t('features.exploreCasino')}</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/10 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              {/* Card suit accent on button */}
+              <span className="absolute -right-2 top-1/2 -translate-y-1/2 text-black/20 text-lg hidden sm:inline-block">♠</span>
+            </a>
+            <p className="text-gray-400 text-xs mt-2 italic">refer code : M0st</p>
+          </div>
           </div>
         </div>
         <div className="relative group lg:order-1">

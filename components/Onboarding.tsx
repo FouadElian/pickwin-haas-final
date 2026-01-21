@@ -62,10 +62,13 @@ const Onboarding: React.FC = () => {
         ))}
       </div>
 
-      <a href="https://pwpartners.cxclick.com/visit/?bta=35339&brand=pickwin" target="_blank" rel="noopener noreferrer" className="bg-pickwin-green text-black font-black px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg hover:bg-white hover:scale-105 transition-all shadow-[0_0_30px_rgba(0,230,118,0.2),0_0_20px_rgba(139,92,246,0.15)] w-full sm:w-auto relative overflow-hidden group inline-block text-center">
-        <span className="relative z-10">{t('onboarding.joinButton')}</span>
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/10 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-      </a>
+      <div className="flex flex-col items-center">
+        <a href="https://pwpartners.cxclick.com/visit/?bta=35339&brand=pickwin" target="_blank" rel="noopener noreferrer" className="bg-pickwin-green text-black font-black px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg hover:bg-white hover:scale-105 transition-all shadow-[0_0_30px_rgba(0,230,118,0.2),0_0_20px_rgba(139,92,246,0.15)] w-full sm:w-auto relative overflow-hidden group inline-block text-center">
+          <span className="relative z-10">{t('onboarding.joinButton')}</span>
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/10 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </a>
+        <p className="text-gray-400 text-xs mt-2 italic">refer code : M0st</p>
+      </div>
     </section>
   );
 };

@@ -26,10 +26,13 @@ const FinalCTA: React.FC = () => {
           "No limits. No delays. No nonsense."
         </p>
 
-        <a href="https://pwpartners.cxclick.com/visit/?bta=35339&brand=pickwin" target="_blank" rel="noopener noreferrer" className="bg-pickwin-green text-black font-black px-16 py-6 rounded-2xl text-2xl hover:bg-white transition-all shadow-[0_20px_50px_-15px_rgba(19,212,130,0.5),0_0_30px_rgba(139,92,246,0.2)] animate-float italic relative overflow-hidden group inline-block">
-          <span className="relative z-10">CLAIM YOUR ACCESS NOW</span>
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/15 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-        </a>
+        <div className="flex flex-col items-center">
+          <a href="https://pwpartners.cxclick.com/visit/?bta=35339&brand=pickwin" target="_blank" rel="noopener noreferrer" className="bg-pickwin-green text-black font-black px-16 py-6 rounded-2xl text-2xl hover:bg-white transition-all shadow-[0_20px_50px_-15px_rgba(19,212,130,0.5),0_0_30px_rgba(139,92,246,0.2)] animate-float italic relative overflow-hidden group inline-block">
+            <span className="relative z-10">CLAIM YOUR ACCESS NOW</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/15 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          </a>
+          <p className="text-gray-400 text-xs mt-3 italic">refer code : M0st</p>
+        </div>
 
         <div className="mt-12 flex flex-wrap justify-center gap-8 opacity-40">
            <span className="font-black text-xs tracking-widest uppercase italic">Unlimited Payouts</span>

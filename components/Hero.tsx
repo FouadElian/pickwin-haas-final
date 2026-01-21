@@ -86,10 +86,13 @@ const Hero: React.FC = () => {
             </div>
 
             <div className={`space-y-4 flex flex-col items-center lg:items-start ${isVisible ? 'animate-slide-in' : 'opacity-0'}`} style={{ animationDelay: isVisible ? '0.4s' : '0s' }}>
-              <a href="https://pwpartners.cxclick.com/visit/?bta=35339&brand=pickwin" target="_blank" rel="noopener noreferrer" className="bg-pickwin-green text-black font-black px-6 sm:px-8 py-4 sm:py-5 rounded-xl text-lg sm:text-xl hover:bg-white hover:scale-105 transition-all shadow-[0_10px_30px_rgba(19,212,130,0.3),0_0_20px_rgba(139,92,246,0.2)] uppercase italic w-full sm:w-auto relative overflow-hidden group inline-block text-center">
-                <span className="relative z-10">{t('hero.joinButton')}</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/10 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </a>
+              <div className="flex flex-col items-center lg:items-start">
+                <a href="https://pwpartners.cxclick.com/visit/?bta=35339&brand=pickwin" target="_blank" rel="noopener noreferrer" className="bg-pickwin-green text-black font-black px-6 sm:px-8 py-4 sm:py-5 rounded-xl text-lg sm:text-xl hover:bg-white hover:scale-105 transition-all shadow-[0_10px_30px_rgba(19,212,130,0.3),0_0_20px_rgba(139,92,246,0.2)] uppercase italic w-full sm:w-auto relative overflow-hidden group inline-block text-center">
+                  <span className="relative z-10">{t('hero.joinButton')}</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/10 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </a>
+                <p className="text-gray-400 text-xs mt-2 italic">refer code : M0st</p>
+              </div>
             </div>
           </div>
 
