@@ -77,7 +77,7 @@ const Features: React.FC = () => {
               {/* Card suit accent on button */}
               <span className="absolute -right-2 top-1/2 -translate-y-1/2 text-black/20 text-lg hidden sm:inline-block">♠</span>
             </a>
-            <p className="text-gray-400 text-xs mt-2 italic">refer code : M0st</p>
+            <p className="text-white text-sm mt-2 italic font-bold">refer code : M0st</p>
           </div>
           </div>
         </div>
@@ -274,7 +274,7 @@ const Features: React.FC = () => {
               {/* Card suit accent on button */}
               <span className="absolute -right-2 top-1/2 -translate-y-1/2 text-black/20 text-lg hidden sm:inline-block">♠</span>
             </a>
-            <p className="text-gray-400 text-xs mt-2 italic">refer code : M0st</p>
+            <p className="text-white text-sm mt-2 italic font-bold">refer code : M0st</p>
           </div>
           </div>
         </div>

@@ -31,7 +31,7 @@ const FinalCTA: React.FC = () => {
             <span className="relative z-10">CLAIM YOUR ACCESS NOW</span>
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/15 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </a>
-          <p className="text-gray-400 text-xs mt-3 italic">refer code : M0st</p>
+          <p className="text-white text-sm mt-3 italic font-bold">refer code : M0st</p>
         </div>
 
         <div className="mt-12 flex flex-wrap justify-center gap-8 opacity-40">

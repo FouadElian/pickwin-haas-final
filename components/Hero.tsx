@@ -91,7 +91,7 @@ const Hero: React.FC = () => {
                   <span className="relative z-10">{t('hero.joinButton')}</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/10 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </a>
-                <p className="text-gray-400 text-xs mt-2 italic">refer code : M0st</p>
+                <p className="text-white text-sm mt-2 italic font-bold">refer code : M0st</p>
               </div>
             </div>
           </div>
