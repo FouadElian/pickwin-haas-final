@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PickWin × M0stWant9d | Exclusive Access</title>
+    <title>PickWin × Samuel Haas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
@@ -122,6 +122,32 @@
         .animate-scale-up {
             animation: scaleUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
             animation-fill-mode: both;
+        }
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideUpFromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-slide-in-left {
+            animation: slideInFromLeft 0.8s ease-out forwards;
+        }
+        .animate-slide-up {
+            animation: slideUpFromBottom 0.8s ease-out forwards;
         }
         html { scroll-behavior: smooth; }
     </style>

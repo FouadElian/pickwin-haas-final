@@ -152,13 +152,10 @@ const SocialProof: React.FC = () => {
   };
 
   return (
-    <section ref={ref}>
+    <section ref={ref} className="pt-12 sm:pt-16 md:pt-20">
       <div className="text-center mb-8 sm:mb-16 relative">
         <h2 className={`text-2xl sm:text-3xl font-black italic tracking-tighter uppercase mb-2 relative ${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
           {t('social.realPlayers')}
-          {/* Card suit decorative elements */}
-          <span className="absolute -left-6 top-1/2 -translate-y-1/2 text-white/10 text-2xl hidden lg:block">♠</span>
-          <span className="absolute -right-6 top-1/2 -translate-y-1/2 text-white/10 text-2xl hidden lg:block">♠</span>
         </h2>
         <p className="text-gray-400 text-xs sm:text-sm font-medium">{t('social.joinCommunity')}</p>
       </div>
@@ -174,8 +171,8 @@ const SocialProof: React.FC = () => {
           onTouchEnd={handleTouchEnd}
         >
           {testimonials.map((t, idx) => (
-            <div key={idx} className="bg-black border border-white/10 p-6 rounded-3xl flex flex-col justify-between hover:bg-gray-900 transition-all shadow-xl flex-shrink-0 relative overflow-hidden group" style={{ width: 'calc(100vw - 3rem)' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+            <div key={idx} className="bg-gradient-to-br from-gray-900 to-gray-950 border border-pickwin-green/20 p-6 rounded-3xl flex flex-col justify-between hover:bg-gray-800 transition-all shadow-xl flex-shrink-0 relative overflow-hidden group" style={{ width: 'calc(100vw - 3rem)' }}>
+              <div className="absolute inset-0 bg-gradient-to-br from-pickwin-green/5 via-transparent to-pickwin-green/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
               {/* Bandana pattern overlay - more visible */}
               <div className="absolute top-2 right-2 w-8 h-8 opacity-15 pointer-events-none bandana-pattern border border-white/20"></div>
               <div>
@@ -215,8 +212,8 @@ const SocialProof: React.FC = () => {
       {/* Desktop: Grid Layout */}
       <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {testimonials.map((t, i) => (
-          <div key={i} className="bg-black border border-white/10 p-6 rounded-3xl flex flex-col justify-between hover:bg-gray-900 transition-all shadow-xl relative overflow-hidden group">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+          <div key={i} className="bg-gradient-to-br from-gray-900 to-gray-950 border border-pickwin-green/20 p-6 rounded-3xl flex flex-col justify-between hover:bg-gray-800 transition-all shadow-xl relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-br from-pickwin-green/5 via-transparent to-pickwin-green/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
             {/* Bandana pattern overlay - more visible */}
             <div className="absolute top-2 right-2 w-8 h-8 opacity-15 pointer-events-none bandana-pattern border border-white/20"></div>
             <div>

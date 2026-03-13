@@ -30,38 +30,34 @@ const MessageFromInfluencer: React.FC = () => {
   }, [isVisible]);
 
   return (
-    <section className="relative" ref={ref}>
-      {/* Subtle cosmic background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-900/5 via-transparent to-blue-900/5 pointer-events-none"></div>
+    <section className="relative bg-gradient-to-b from-gray-950 to-gray-900" ref={ref}>
+      {/* Subtle green background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-pickwin-green/3 via-transparent to-pickwin-green/3 pointer-events-none"></div>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-12 sm:py-16 relative z-10">
         <h2 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 sm:mb-12 text-center relative ${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
           <span className="text-white block sm:inline">MESSAGE FROM</span>{' '}
           <span className="text-pickwin-green block sm:inline relative">
-            M0ST WANT9D
-            <span className="absolute inset-0 blur-sm -z-10" style={{ color: 'rgba(232, 121, 249, 0.4)', textShadow: '0 0 10px rgba(232, 121, 249, 0.6)' }}>M0ST WANT9D</span>
-            {/* Card suit accents - purple-pink glow */}
-            <span className="absolute -right-8 top-0 text-3xl hidden lg:inline" style={{ color: 'rgba(232, 121, 249, 0.6)', textShadow: '0 0 15px rgba(232, 121, 249, 0.8)' }}>♠</span>
-            <span className="absolute -left-8 top-0 text-3xl hidden lg:inline" style={{ color: 'rgba(217, 70, 239, 0.6)', textShadow: '0 0 15px rgba(217, 70, 239, 0.8)' }}>♠</span>
+            SAMUEL HAAS
           </span>
           {/* Silver medallion accent - more visible */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-3 w-3.5 h-3.5 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400 rounded-full border-2 border-white/50 shadow-lg hidden lg:block"></div>
         </h2>
         
-        <div className={`space-y-4 sm:space-y-6 text-gray-300 text-base sm:text-lg leading-relaxed relative ${isVisible ? 'animate-slide-in' : 'opacity-0'}`} style={{ animationDelay: isVisible ? '0.3s' : '0s' }}>
+        <div className={`space-y-4 sm:space-y-6 text-white text-base sm:text-lg leading-relaxed relative ${isVisible ? 'animate-slide-in' : 'opacity-0'}`} style={{ animationDelay: isVisible ? '0.3s' : '0s' }}>
           {/* Bandana pattern overlay - more visible */}
           <div className="absolute top-4 right-4 w-10 h-10 opacity-10 pointer-events-none bandana-pattern border border-white/20 hidden lg:block"></div>
           <div className="absolute bottom-4 left-4 w-10 h-10 opacity-10 pointer-events-none bandana-pattern border border-white/20 hidden lg:block"></div>
           <p className="relative z-10">
-            I am always looking for platforms that give serious bettors a <span className="text-white font-black">real advantage.</span> Platforms where winning is respected and where you can play with confidence, knowing your success will not be questioned.
+            Je parie chaque jour le montant exact que j'ai dépensé dans la vraie vie. Je mise sur le rouge, transformant mes dépenses quotidiennes en opportunités de paris pour voir si je peux survivre et prospérer.
           </p>
           <p className="relative z-10">
-            <span className="text-white font-black">That is why I chose PickWin.</span> It offers an experience that most sportsbooks simply do not. PickWin was <span className="text-white font-black">built to handle winners,</span> volume, and consistent performance without restrictions.
+            <span className="text-white font-black">C'est pourquoi j'ai choisi PickWin.</span> Pour un défi comme celui-ci, j'ai besoin d'une plateforme qui peut gérer les paris quotidiens, sans limites, et avec des paiements rapides. PickWin a été <span className="text-white font-black">conçu pour ce type de paris sérieux</span> où chaque jour compte et chaque retrait est important.
           </p>
           <p className="relative z-10">
-            It is a platform <span className="text-white font-black">designed for players who know what they are doing</span> and expect to be paid without delays or excuses.
+            Que je parie ce que j'ai dépensé en café, en courses ou autre chose, PickWin traite tout <span className="text-white font-black">sans délais ni restrictions.</span> C'est la seule plateforme à laquelle je fais confiance pour ce défi.
           </p>
           <p className="relative z-10">
-            Continue below to learn more and make sure you register today so you can access a sportsbook <span className="text-white font-black">built for winners.</span>
+            Rejoignez-moi dans cette aventure et inscrivez-vous aujourd'hui pour accéder à un bookmaker <span className="text-white font-black">qui respecte votre stratégie de paris</span> et vous paie quand vous gagnez.
           </p>
         </div>
       </div>

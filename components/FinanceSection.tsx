@@ -42,8 +42,6 @@ const FinanceSection: React.FC = () => {
         <div className={`flex flex-col justify-center ${depositsVisible ? 'md:opacity-100 animate-slide-in' : 'md:opacity-100 opacity-0'}`}>
           <h2 className={`text-2xl sm:text-3xl font-black mb-2 italic tracking-tight uppercase relative ${depositsVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
             FAST AND FLEXIBLE DEPOSITS
-            {/* Card suit accent - more visible */}
-            <span className="absolute -right-8 top-1/2 -translate-y-1/2 text-2xl hidden lg:inline-block" style={{ color: 'rgba(232, 121, 249, 0.6)', textShadow: '0 0 15px rgba(232, 121, 249, 0.8)' }}>♠</span>
             {/* Silver medallion accent - more visible */}
             <div className="absolute top-0 left-0 -translate-y-2 w-3 h-3 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400 rounded-full border-2 border-white/50 shadow-md hidden lg:block"></div>
           </h2>
@@ -54,7 +52,7 @@ const FinanceSection: React.FC = () => {
           
         <div className="relative group">
           <div className="absolute -inset-4 bg-pickwin-green/10 rounded-[32px] blur-2xl group-hover:bg-pickwin-green/20 transition-all" />
-          <div className="absolute -inset-4 bg-purple-600/5 rounded-[32px] blur-2xl group-hover:bg-purple-600/10 transition-all"></div>
+          <div className="absolute -inset-4 bg-pickwin-green/5 rounded-[32px] blur-2xl group-hover:bg-pickwin-green/10 transition-all"></div>
           <div className="relative bg-black border border-white/10 rounded-[32px] overflow-hidden shadow-2xl p-6">
             {/* Payment Methods Card */}
             <div className="bg-pickwin-bg rounded-xl p-4 sm:p-6 border border-white/5">
@@ -99,7 +97,7 @@ const FinanceSection: React.FC = () => {
       {/* Withdrawals */}
       <section className="bg-black border border-white/10 rounded-[24px] sm:rounded-[32px] md:rounded-[40px] p-5 sm:p-6 md:p-8 relative overflow-hidden shadow-2xl" ref={withdrawalsRef}>
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-pickwin-green/5 rounded-full blur-[100px] pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-pickwin-green/5 rounded-full blur-[100px] pointer-events-none" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-blue-600/5 rounded-full blur-[80px] pointer-events-none" />
         
         <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-center">
@@ -187,7 +185,6 @@ const FinanceSection: React.FC = () => {
                 FAST PAYOUTS.
                 <span className="absolute inset-0 text-blue-400/20 blur-sm -z-10">FAST PAYOUTS.</span>
                 {/* Card suit accent - more visible */}
-                <span className="absolute -right-8 top-1/2 -translate-y-1/2 text-3xl hidden lg:inline-block" style={{ color: 'rgba(217, 70, 239, 0.6)', textShadow: '0 0 15px rgba(217, 70, 239, 0.8)' }}>♠</span>
               </span>
             </h2>
             <div className="space-y-1.5 sm:space-y-2">

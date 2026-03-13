@@ -1,6 +1,8 @@
 
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import pokerChipsImage from './img/poker chips .png';
+import rouletteImage from './img/Roulette-wheel.svg.png';
 
 const StatsBar: React.FC = () => {
   const { t } = useLanguage();
@@ -14,23 +16,29 @@ const StatsBar: React.FC = () => {
     { label: t('stats.support'), value: t('stats.24_7') },
   ];
   return (
-    <div className="bg-black border-y border-white/5 py-10 overflow-hidden shadow-inner relative">
-      {/* Purple-pink glow background - matching logo */}
-      <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(90deg, rgba(232, 121, 249, 0.08) 0%, transparent 50%, rgba(217, 70, 239, 0.08) 100%)' }}></div>
+    <div className="bg-gradient-to-r from-gray-950 via-gray-900 to-gray-950 border-y border-pickwin-green/10 py-10 overflow-hidden shadow-inner relative">
+      {/* Green glow background */}
+      <div className="absolute inset-0 pointer-events-none bg-pickwin-green/3"></div>
       <div className="flex whitespace-nowrap animate-marquee relative z-10">
         {[...Array(2)].map((_, i) => (
-          <div key={i} className="flex gap-8 sm:gap-12 md:gap-16 lg:gap-32 px-4 sm:px-8">
+          <div key={i} className="flex items-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 px-4 sm:px-8">
             {stats.map((stat, idx) => (
-              <div key={idx} className="flex items-center gap-2 sm:gap-3 md:gap-4">
-                {/* Card suit divider - purple-pink glow */}
-                <span className="text-xl sm:text-2xl hidden md:block" style={{ color: 'rgba(232, 121, 249, 0.5)', textShadow: '0 0 10px rgba(232, 121, 249, 0.7)' }}>♠</span>
+              <React.Fragment key={idx}>
+                <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
                 <span className="text-pickwin-green font-black text-xl sm:text-2xl md:text-3xl italic relative">
                   {stat.value}
-                  <span className="absolute inset-0 blur-sm -z-10" style={{ color: 'rgba(232, 121, 249, 0.3)', textShadow: '0 0 8px rgba(232, 121, 249, 0.5)' }}>{stat.value}</span>
                 </span>
-                <span className="text-gray-400 font-bold uppercase tracking-widest text-[10px] sm:text-xs md:text-sm">{stat.label}</span>
-                <span className="text-xl sm:text-2xl hidden md:block" style={{ color: 'rgba(217, 70, 239, 0.5)', textShadow: '0 0 10px rgba(217, 70, 239, 0.7)' }}>♠</span>
+                  <span className="text-white/80 font-bold uppercase tracking-widest text-[10px] sm:text-xs md:text-sm">{stat.label}</span>
               </div>
+                {idx < stats.length - 1 && (
+                  <img 
+                    src={idx % 2 === 0 ? pokerChipsImage : rouletteImage} 
+                    alt={idx % 2 === 0 ? 'Poker chips' : 'Roulette wheel'} 
+                    className={`${idx % 2 === 0 ? 'w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7' : 'w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8'} object-contain flex-shrink-0`}
+                    style={{ filter: 'drop-shadow(0 0 15px rgba(19,212,130,0.8))' }}
+                  />
+                )}
+              </React.Fragment>
             ))}
           </div>
         ))}

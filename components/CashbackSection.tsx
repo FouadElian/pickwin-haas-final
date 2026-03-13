@@ -31,7 +31,7 @@ const CashbackSection: React.FC = () => {
   return (
     <section className="bg-pickwin-green rounded-[24px] sm:rounded-[32px] md:rounded-[40px] p-5 sm:p-6 md:p-8 text-black relative overflow-hidden shadow-[0_20px_60px_-15px_rgba(19,212,130,0.5)]" ref={ref}>
       {/* Cosmic glow overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-blue-500/10 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-pickwin-green/10 via-transparent to-pickwin-green/10 pointer-events-none"></div>
       {/* Decorative text */}
       <div className="absolute -bottom-10 -right-10 opacity-5 pointer-events-none select-none hidden md:block">
         <span className="text-[200px] font-black italic leading-none tracking-tighter uppercase">FREE CASH</span>
@@ -41,9 +41,6 @@ const CashbackSection: React.FC = () => {
         <div className={`${isVisible ? 'md:opacity-100 animate-slide-in' : 'md:opacity-100 opacity-0'}`}>
           <h2 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black italic tracking-tighter mb-2 leading-tight sm:leading-none uppercase relative ${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
             WE PAY YOU <br /> TO PLAY.
-            {/* Card suit accents - more visible */}
-            <span className="absolute -left-10 top-1/2 -translate-y-1/2 text-purple-600/40 text-4xl hidden lg:block drop-shadow-lg">♠</span>
-            <span className="absolute -right-10 top-1/2 -translate-y-1/2 text-blue-600/40 text-4xl hidden lg:block drop-shadow-lg">♠</span>
             {/* Silver medallion accent - more visible */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-3 w-3.5 h-3.5 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400 rounded-full border-2 border-black/30 shadow-lg hidden lg:block"></div>
           </h2>
@@ -59,7 +56,6 @@ const CashbackSection: React.FC = () => {
             <p className="text-pickwin-green font-black text-[10px] sm:text-xs uppercase tracking-[0.3em] mb-2 italic relative z-10">Daily Reward</p>
             <h3 className="text-3xl sm:text-4xl font-black mb-2 italic tracking-tight uppercase relative z-10">
               22% Cashback
-              <span className="absolute -right-6 top-1/2 -translate-y-1/2 text-purple-400/40 text-2xl hidden sm:inline-block drop-shadow-lg">♠</span>
             </h3>
             <p className="text-gray-400 text-xs sm:text-sm font-medium relative z-10">Every day, we calculate your net losses and credit your account with cold hard cash. No hoops, no strings.</p>
           </div>
@@ -70,7 +66,6 @@ const CashbackSection: React.FC = () => {
             <p className="text-black font-black text-[10px] sm:text-xs uppercase tracking-[0.3em] mb-2 italic relative z-10">Monday Reload</p>
             <h3 className="text-3xl sm:text-4xl font-black mb-2 italic tracking-tight uppercase relative z-10">
               10% Bonus
-              <span className="absolute -right-6 top-1/2 -translate-y-1/2 text-purple-600/40 text-2xl hidden sm:inline-block drop-shadow-lg">♠</span>
             </h3>
             <p className="text-black/60 text-xs sm:text-sm font-medium relative z-10">Kick off your week with a 10% cash bonus added to your balance automatically every Monday morning.</p>
           </div>
