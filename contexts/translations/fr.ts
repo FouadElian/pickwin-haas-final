@@ -123,7 +123,7 @@ const fr: Record<string, string> = {
   // ─────────────────────────────────────────────
   'race.badge': 'Exclusivité Samuel Haas',
   'race.title': 'Wager Race',
-  'race.subtitle': 'Les joueurs qui misent le plus ce mois-ci grimpent au classement. Le Top 10 se partage les cashprizes.',
+  'race.subtitle': 'Les joueurs qui misent le plus ce mois-ci grimpent au classement. Top 50 au leaderboard — le Top 10 se partage les cashprizes.',
   'race.currentMonth': 'Ce mois',
   'race.previousMonth': 'Mois dernier',
   'race.top': 'Top',

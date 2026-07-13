@@ -92,8 +92,7 @@ const Leaderboard: React.FC = () => {
     };
   }, [period]);
 
-  // Pour l'instant on n'affiche que le top 10 joueurs. On augmentera la limite plus tard.
-  const items = (data?.items ?? []).slice(0, 10);
+  const items = (data?.items ?? []).slice(0, 50);
   const currency = data?.currency ?? 'CAD';
   const podium = items.slice(0, 3);
   const rest = items.slice(3);
