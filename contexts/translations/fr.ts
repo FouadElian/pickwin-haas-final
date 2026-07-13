@@ -117,6 +117,32 @@ const fr: Record<string, string> = {
   // ─────────────────────────────────────────────
   'sticky.joinButton': 'REJOIGNEZ',
   'sticky.referCode': 'Code : Haas',
+
+  // ─────────────────────────────────────────────
+  // Wager Race / Leaderboard
+  // ─────────────────────────────────────────────
+  'race.badge': 'Exclusivité Samuel Haas',
+  'race.title': 'Wager Race',
+  'race.subtitle': 'Les joueurs qui misent le plus ce mois-ci grimpent au classement. Le Top 10 se partage les cashprizes.',
+  'race.currentMonth': 'Ce mois',
+  'race.previousMonth': 'Mois dernier',
+  'race.top': 'Top',
+  'race.each': 'chacun',
+  'race.wagered': 'Misé ce mois-ci',
+  'race.wageredShort': 'Misé',
+  'race.wins': 'Gagne',
+  'race.player': 'Joueur',
+  'race.prizePoolLabel': 'Récompenses',
+  'race.minWager': 'Minimum pour être éligible à un lot :',
+  'race.cta': 'Voir le Leaderboard',
+  'race.bannerSub': '900 $ de récompenses chaque mois',
+  'race.promoTag': 'Exclusif',
+  'race.promoTitle': 'Wager Race Exclusive : 1 000 $ de Cashprize !',
+  'race.promoDesc': 'Rejoignez la compétition de la communauté dès maintenant. Jouez, grimpez au classement en temps réel et repartez avec le gros lot.',
+  'race.back': "Retour à l'accueil",
+  'race.error': 'Le classement est temporairement indisponible. Revenez bientôt.',
+  'race.empty': 'Aucun joueur classé ce mois-ci. Soyez le premier !',
+  'race.disclaimer': 'Les pseudos sont partiellement masqués pour protéger la vie privée. Classement mis à jour toutes les heures.',
 };
 
 export default fr;

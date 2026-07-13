@@ -113,6 +113,32 @@ const en: Record<string, string> = {
   // ─────────────────────────────────────────────
   'sticky.joinButton': 'JOIN NOW',
   'sticky.referCode': 'Code: Haas',
+
+  // ─────────────────────────────────────────────
+  // Wager Race / Leaderboard
+  // ─────────────────────────────────────────────
+  'race.badge': 'Samuel Haas Exclusive',
+  'race.title': 'Wager Race',
+  'race.subtitle': 'The most wagered players of the month climb the ranks. Top 10 share the cash prizes.',
+  'race.currentMonth': 'This Month',
+  'race.previousMonth': 'Last Month',
+  'race.top': 'Top',
+  'race.each': 'each',
+  'race.wagered': 'Wagered this month',
+  'race.wageredShort': 'Wagered',
+  'race.wins': 'Wins',
+  'race.player': 'Player',
+  'race.prizePoolLabel': 'Cash prizes',
+  'race.minWager': 'Minimum to qualify for a prize:',
+  'race.cta': 'View Leaderboard',
+  'race.bannerSub': '$900 in prizes every month',
+  'race.promoTag': 'Exclusive',
+  'race.promoTitle': 'Wager Race Exclusive: $1,000 Cashprize!',
+  'race.promoDesc': 'Join the community competition now. Play, climb the live leaderboard, and walk away with the jackpot.',
+  'race.back': 'Back to home',
+  'race.error': 'The leaderboard is temporarily unavailable. Check back soon.',
+  'race.empty': 'No players ranked yet this month. Be the first!',
+  'race.disclaimer': 'Usernames are partially hidden to protect player privacy. Rankings update hourly.',
 };
 
 export default en;
