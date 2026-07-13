@@ -11,14 +11,19 @@ import FinalCTA from './components/FinalCTA';
 import WagerRacePromo from './components/WagerRacePromo';
 import WagerRacePage from './components/WagerRacePage';
 
+// Flip to true to bring the wager race back on Haas.
+const SHOW_WAGER_RACE = false;
+
 const MainPage: React.FC = () => (
   <>
     <Navbar />
     <main>
       <Hero />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-2">
-        <WagerRacePromo />
-      </div>
+      {SHOW_WAGER_RACE && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-2">
+          <WagerRacePromo />
+        </div>
+      )}
       <StatsBar />
       <SocialProof />
       <WhyPickWin />
@@ -30,7 +35,8 @@ const MainPage: React.FC = () => (
 
 const Routes: React.FC = () => {
   const path = usePath();
-  return path === '/wager-race' ? <WagerRacePage /> : <MainPage />;
+  if (SHOW_WAGER_RACE && path === '/wager-race') return <WagerRacePage />;
+  return <MainPage />;
 };
 
 const App: React.FC = () => {
